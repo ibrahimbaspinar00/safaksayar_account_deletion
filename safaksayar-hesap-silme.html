@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Şafaksayar Hesap Silme</title>
+  <style>
+    :root {
+      --bg-start: #f8fbff;
+      --bg-end: #eef4fa;
+      --card-bg: #ffffff;
+      --text: #1f2937;
+      --muted: #4b5563;
+      --accent: #0f4c81;
+      --accent-hover: #0b3c67;
+      --border: #d9e2ec;
+      --note-bg: #f5f9ff;
+      --note-border: #d5e6f7;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: linear-gradient(180deg, var(--bg-start) 0%, var(--bg-end) 100%);
+    }
+
+    .page {
+      min-height: 100dvh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      width: min(760px, 100%);
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      box-shadow: 0 8px 24px rgba(15, 76, 129, 0.08);
+      padding: 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      font-size: clamp(1.5rem, 2.6vw, 2rem);
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.05rem;
+      color: #123a5a;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .subtitle {
+      margin-bottom: 20px;
+      color: var(--muted);
+    }
+
+    .section {
+      margin-top: 18px;
+    }
+
+    ul {
+      margin: 8px 0 0 20px;
+      padding: 0;
+    }
+
+    li {
+      margin: 6px 0;
+    }
+
+    .note {
+      margin-top: 14px;
+      padding: 12px 14px;
+      background: var(--note-bg);
+      border: 1px solid var(--note-border);
+      border-radius: 10px;
+      color: #234;
+    }
+
+    .cta {
+      margin-top: 22px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 10px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.2s ease, transform 0.2s ease;
+    }
+
+    .button:hover,
+    .button:focus-visible {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .footer {
+      margin-top: 24px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .footer a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .footer a:hover,
+    .footer a:focus-visible {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+        border-radius: 12px;
+      }
+
+      .button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="title">
+      <h1 id="title">Şafaksayar Hesap Silme</h1>
+      <p class="subtitle">
+        Bu sayfa, <strong>Şafaksayar</strong> uygulamasındaki hesabınızı ve hesabınızla ilişkili verileri
+        silme talebi oluşturmanız için hazırlanmıştır.
+      </p>
+
+      <div class="section">
+        <h2>Hesap silme talebi nasıl oluşturulur?</h2>
+        <ul>
+          <li>Aşağıdaki <strong>Hesap Silme Talebi Gönder</strong> butonuna tıklayın.</li>
+          <li>Açılan e-posta taslağını kontrol edip gönderin.</li>
+          <li>Talebinizde, <strong>Şafaksayar hesabınızda kayıtlı e-posta adresinizi</strong> mutlaka belirtin.</li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <h2>Silme işlemi kapsamında</h2>
+        <p>
+          Talebiniz onaylandığında, hesabınız ve hesabınıza bağlı temel kullanıcı verileri
+          (profil bilgileri, uygulama içi hesap kayıtları ve ilişkili kullanıcı içerikleri)
+          silinir veya erişilemez hale getirilir.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Yasal saklama durumu</h2>
+        <p>
+          Yasal yükümlülükler nedeniyle, bazı işlem ve kayıt verileri sınırlı kapsamda ve gerekli süre boyunca
+          saklanabilir; süre sonunda güvenli şekilde silinir veya anonimleştirilir.
+        </p>
+      </div>
+
+      <div class="note" role="note">
+        Hesap silme talepleri şu iletişim adresi üzerinden alınmaktadır:
+        <strong>ibrahimbaspinar00@gmail.com</strong>
+      </div>
+
+      <div class="cta">
+        <a
+          class="button"
+          href="mailto:ibrahimbaspinar00@gmail.com?subject=%C5%9Eafaksayar%20Hesap%20Silme%20Talebi&body=Merhaba%2C%0A%0A%C5%9Eafaksayar%20hesab%C4%B1m%C4%B1n%20silinmesini%20talep%20ediyorum.%0A%0AKay%C4%B1tl%C4%B1%20e-posta%20adresim%3A%20%0AAd%20Soyad%3A%20%0ATalep%20Detay%C4%B1%3A%20%0A%0ATe%C5%9Fekk%C3%BCrler."
+        >
+          Hesap Silme Talebi Gönder
+        </a>
+      </div>
+
+      <footer class="footer">
+        <p>
+          Gizlilik politikası:
+          <a href="https://ibrahimbaspinar00.github.io/-afak-Sayar-Gizlilik-Politikas-/" target="_blank" rel="noopener noreferrer" aria-label="Gizlilik Politikası bağlantısı">Gizlilik Politikası</a>
+        </p>
+      </footer>
+    </section>
+  </main>
+</body>
+</html>
